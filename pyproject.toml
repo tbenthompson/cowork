@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cowork"
+version = "0.1.0"
+description = "A simple coworking reminder app"
+authors = ["Ben Thompson <t.ben.thompson@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cowork"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyQt6 = "^6.7.1"
+
+[tool.poetry.scripts]
+cowork = "cowork.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
